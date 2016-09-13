@@ -1,0 +1,36 @@
+html {
+  font-family: sans-serif, arial, monospace;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  background-color: pink;
+  font-size: 3em;
+}
+
+.flex-container {
+  flex-direction: row ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul{
+  list-style: none outside none;
+  margin: 0 auto;
+}
+.recipie-item{
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.recipie-item > img{
+  width: 250px;
+}
