@@ -1,6 +1,8 @@
-html {
-  font-family: sans-serif, arial, monospace;
+@import 'https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro';
 
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,8 +13,29 @@ html {
 }
 
 h1 {
+  font-family: 'Slabo 27px', serif;
   background-color: pink;
   font-size: 3em;
+}
+h2 {
+  font-family: 'Slabo 27px', serif;
+}
+h3 {
+  font-family: 'Slabo 27px', serif;
+  display: inline;
+}
+h3 ~ a {
+  text-decoration: none;
+  display:inline;
+}
+
+.box-featured {
+  background-image: url("/assets/background-header-image.png");
+  background-size: 100%
+}
+
+.box-featured > p {
+  width: 50%;
 }
 
 .flex-container {
@@ -24,7 +47,8 @@ h1 {
 
 ul{
   list-style: none outside none;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 .recipie-item{
   margin: 10px;
@@ -32,5 +56,5 @@ ul{
 }
 
 .recipie-item > img{
-  width: 250px;
+  width: 255px;
 }
