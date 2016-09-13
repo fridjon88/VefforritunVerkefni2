@@ -41,7 +41,7 @@ h3 ~ a {
 }
 .box-featured {
   display: flex;
-  background-image: url("/assets/background-header-image@2x.png");
+  background-image: url("assets/background-header-image@2x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 900px;
