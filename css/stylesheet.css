@@ -28,14 +28,28 @@ h3 ~ a {
   text-decoration: none;
   display:inline;
 }
-
-.box-featured {
-  background-image: url("/assets/background-header-image.png");
-  background-size: 100%
+.box-header{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar > ul > li{
+  display: inline;
 }
 
-.box-featured > p {
-  width: 50%;
+#logo {
+  display: inline;;
+}
+.box-featured {
+  display: flex;
+  background-image: url("/assets/background-header-image@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px;
+  height: 475px;
+}
+
+.box-featured > section > .text {
+  width: 400px;
 }
 
 .flex-container {
@@ -43,6 +57,7 @@ h3 ~ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  justify-content: space-between;
 }
 
 ul{
@@ -51,7 +66,8 @@ ul{
   padding: 0;
 }
 .recipie-item{
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
