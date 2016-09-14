@@ -1,44 +1,46 @@
 @import 'https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro';
 
 
-html {
+html, body {
   font-family: "Source Sans Pro", sans-serif;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+          overflow-x: hidden;
+          margin: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
 }
 .container {
   max-width: 900px;
   margin: 0 auto;
 }
+h1, h2, h3 {
+  font-family: 'Slabo 27px', serif;
+}
 
 h1 {
-  font-family: 'Slabo 27px', serif;
   background-color: pink;
   font-size: 3em;
 }
-h2 {
-  font-family: 'Slabo 27px', serif;
-}
 h3 {
-  font-family: 'Slabo 27px', serif;
   display: inline;
 }
 h3 ~ a {
-  text-decoration: none;
   display:inline;
 }
 .box-header{
   display: flex;
   justify-content: space-between;
 }
-.navbar > ul > li{
+
+.navbar > ul > li {
   display: inline;
+  margin: 10px;
 }
 
-#logo {
-  display: inline;;
-}
 .box-featured {
   display: flex;
   background-image: url("../assets/background-header-image@2x.png");
@@ -53,8 +55,8 @@ h3 ~ a {
 }
 
 .flex-container {
-  flex-direction: row ;
   display: flex;
+  flex-direction: row ;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-between;
@@ -73,4 +75,44 @@ ul{
 
 .recipie-item > img{
   width: 255px;
+}
+.box-book{
+  display: flex;
+}
+
+.book-item > img
+{
+  padding-right: 50px;
+  height: 450px
+
+}
+.box-footer {
+  display: flex;
+  background: black;
+  color: white;
+  align-items: center;
+  border-left: red;
+  /*crazy background hack https://css-tricks.com/full-browser-width-bars/ */
+  margin: 0 -601.5rem;
+  /* add back section padding (1.5rem) */
+  padding: 0.25rem 1.5rem;
+  /* border has to be solid, not RGBa */
+  /* 9600px or equiv (600rem = 9600/16) */
+  border-left: 600rem solid black;
+  border-right: 600rem solid black;
+}
+.item-footer {
+  width: 25%;
+  text-align: left;
+}
+
+.item-footer.subtext {
+  width: 50%;
+  text-align: left;
+}
+
+.box-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

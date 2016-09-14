@@ -19,9 +19,15 @@
         </div>
         <nav class="navbar">
           <ul>
-            <li>Recipies</li>
-            <li>Videos</li>
-            <li>About us</li>
+            <li>
+              <a href="#recipies">Recipies</a>
+            </li>
+            <li>
+              <a href="#videos">Videos</a>
+            </li>
+            <li>
+              <a href="#about">About us</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -41,7 +47,7 @@
   </header>
   <main>
     <div class="container">
-      <div class="box-recipies">
+      <div class="box-recipies" id="recipies">
         <section>
           <p>All the news are here</p>
           <h1>Check out our latest recipies</h1>
@@ -94,16 +100,22 @@
           <div>See more</div>
         </section>
       </div>
-      <div class="box">
-        <section>
-          <p>We’re glad to announce you</p>
-          <h1>Our book is out</h1>
-          <p>
-            Pumpkin pie is a sweet desert pie with a spiced, pumpkinbased custard filling. The pumpkin is a sumbol of harvest time, and pumpkin pie is often eaten during the fall and early winter
-          </p>
-        </section>
-      </div>
-      <div class="box-recipies">
+      <section>
+        <div class="box-book">
+          <div class="book-item">
+            <p>We’re glad to announce you</p>
+            <h1>Our book is out</h1>
+            <p>
+              Pumpkin pie is a sweet desert pie with a spiced, pumpkinbased custard filling. The pumpkin is a sumbol of harvest time, and pumpkin pie is often eaten during the fall and early winter
+            </p>
+          </div>
+            <div class="book-item">
+          <img src="assets/magazine@2x.png" alt="A image of the new book" class="book-item">
+            </div>
+        </div>
+      </section>
+
+      <div class="box-recipies" id="videos">
         <section>
           <p>Want some moving stuff</p>
           <h1>Check out our video recipes</h1>
@@ -140,18 +152,39 @@
   </main>
 
   <footer>
-    <div class="container">
-      <div class="box">
-        <section>
-          <p>You’re craving for more ?</p>
-          <h2>Subscribe to our newsletter</h2>
-        </section>
-      </div>
-      <div class="box">
-        <section>
+    <div class="container" id="about">
+      <section>
+        <div class="box-footer">
+          <div class="item-footer subtext">
+            <p>You’re craving for more ?</p>
+            <h2>Subscribe to our newsletter</h2>
+          </div>
+          <div class="item-footer">
+            <form>
+              <p>E-mail</p>
+              <input required type="email" name="email" id="email" placeholder="Enter your email here">
+            </form>
+            <p>Contact</p>
+            <p>frj4@hi.is</p>
+          </div>
+          <div class="item-footer">
+            <p>Subscribe now</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="box-social">
           <p>Come and join us for more recipes</p>
-        </section>
-      </div>
+          <div item-social>
+            <img src="assets/facebook-icon@3x.png" alt="facebook logo">
+            <img src="assets/twitter-icon@3x.png" alt="twitter logo">
+            <img src="assets/you-tube-icon@3x.png" alt="youtube logo">
+          </div>
+          <div item-social></div>
+          <div item-social></div>
+          <a href="http://www.yamyam.com/">yamyam.com</a>
+        </div>
+      </section>
     </div>
   </footer>
 </body>
