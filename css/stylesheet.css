@@ -17,13 +17,20 @@ a {
   max-width: 900px;
   margin: 0 auto;
 }
-h1, h2, h3 {
+
+h1, h3 {
   font-family: 'Slabo 27px', serif;
 }
 
 h1 {
-  background-color: pink;
   font-size: 3em;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+h2 {
+  color: rgb(227, 205, 177);
+  font-weight: normal;
+  font-size: 1em;
 }
 h3 {
   display: inline;
@@ -31,6 +38,11 @@ h3 {
 h3 ~ a {
   display:inline;
 }
+
+section {
+  padding: 50px;
+}
+
 .box-header{
   display: flex;
   justify-content: space-between;
@@ -43,11 +55,13 @@ h3 ~ a {
 
 .box-featured {
   display: flex;
+
   background-image: url("../assets/background-header-image@2x.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: 900px;
   height: 475px;
+
 }
 
 .box-featured > section > .text {
@@ -62,22 +76,49 @@ h3 ~ a {
   justify-content: space-between;
 }
 
-ul{
+ul, li{
   list-style: none outside none;
   margin: 0;
   padding: 0;
 }
 .recipie-item{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 10x;
+  margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .recipie-item > img{
   width: 255px;
 }
+.recipie-item:hover {
+background: linear-gradient( rgb(247, 241, 235)0%, rgb(247, 241, 235) 64%, white 64%, white 100%);
+}
+
+.recipie-item:hover > img {
+  opacity: 0.6;
+
+}
+
+.recipie-item.button {
+  display: inline-flex;;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: none;
+  align-self: flex-end;
+}
+
+.recipie-item.line {
+display: inline-flex;;
+  width: 30%;
+  height: 1px;
+  margin-top: 30px;
+  background: black;
+}
+
 .box-book{
   display: flex;
+  background: linear-gradient(
+    rgb(247, 241, 235)0%, rgb(247, 241, 235) 75%, white 75%, white 100%);
 }
 
 .book-item > img
@@ -115,4 +156,33 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.button {
+  text-align: center;
+  width: 65px;
+  border-style: solid;
+  border-width: thin;
+  padding: 10px 60px 10px;
+  color: rgb(227, 205, 177);
+  background-color: white;
+}
+.button-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.button:hover {
+  border-color: rgb(227, 205, 177);
+  background-color: rgb(227, 205, 177);
+  background: linear-gradient(
+    to right, rgb(227, 205, 177)0%, rgb(227, 205, 177) 47%, white 47%, white 100%);
+}
+
+.button:hover::first-letter {
+  color: white;
+}
+.button:hover::first-letter > span {
+  color: white;
 }
