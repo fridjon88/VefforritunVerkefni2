@@ -1,8 +1,8 @@
-@import 'https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro';
-
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display|Poppins';
 
 html, body {
-  font-family: "Source Sans Pro", sans-serif;
+
+  font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,28 +14,32 @@ a {
   color: currentColor;
 }
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-h1, h3 {
-  font-family: 'Slabo 27px', serif;
+h1, h2 {
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 60px;
+  font-weight: bold;
   margin-top: 0px;
   margin-bottom: 15px;
 }
 h2 {
-  color: rgb(227, 205, 177);
-  font-weight: normal;
-  font-size: 1em;
+  font-size: 40;
 }
 h3 {
+  color: rgb(227, 205, 177);
+  font-weight: normal;
+  font-size: 15px;
+}
+h4 {
   display: inline;
 }
-h3 ~ a {
+h4 ~ a {
   display:inline;
 }
 
@@ -59,7 +63,7 @@ section {
   background-image: url("../assets/background-header-image@2x.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 900px;
+  background-size: 1000px;
   height: 475px;
 
 }
@@ -89,6 +93,7 @@ ul, li{
 
 .recipie-item > img{
   width: 255px;
+  z-index: -1;
 }
 .recipie-item:hover {
 background: linear-gradient( rgb(247, 241, 235)0%, rgb(247, 241, 235) 64%, white 64%, white 100%);
@@ -100,11 +105,8 @@ background: linear-gradient( rgb(247, 241, 235)0%, rgb(247, 241, 235) 64%, white
 }
 
 .recipie-item.button {
-  display: inline-flex;;
-  margin-top: 10px;
-  margin-bottom: 10px;
   box-shadow: none;
-  align-self: flex-end;
+
 }
 
 .recipie-item.line {
@@ -119,6 +121,7 @@ display: inline-flex;;
   display: flex;
   background: linear-gradient(
     rgb(247, 241, 235)0%, rgb(247, 241, 235) 75%, white 75%, white 100%);
+
 }
 
 .book-item > img
@@ -132,7 +135,7 @@ display: inline-flex;;
   background: black;
   color: white;
   align-items: center;
-  border-left: red;
+
   /*crazy background hack https://css-tricks.com/full-browser-width-bars/ */
   margin: 0 -601.5rem;
   /* add back section padding (1.5rem) */
@@ -160,12 +163,11 @@ display: inline-flex;;
 
 .button {
   text-align: center;
-  width: 65px;
+  width: 90px;
   border-style: solid;
   border-width: thin;
   padding: 10px 60px 10px;
   color: rgb(227, 205, 177);
-  background-color: white;
 }
 .button-item {
   margin-top: 10px;
@@ -173,16 +175,53 @@ display: inline-flex;;
   width: 200px;
 }
 
-.button:hover {
+.button:hover  {
   border-color: rgb(227, 205, 177);
   background-color: rgb(227, 205, 177);
   background: linear-gradient(
-    to right, rgb(227, 205, 177)0%, rgb(227, 205, 177) 47%, white 47%, white 100%);
+    to right, rgb(227, 205, 177)0%, rgb(227, 205, 177) 47%, transparent 47%, transparent 100%);
 }
 
-.button:hover::first-letter {
+.button:hover > span {
   color: white;
 }
-.button:hover::first-letter > span {
+
+.button.subscribe:hover {
+  background: linear-gradient(
+    to right, rgb(227, 205, 177)0%, rgb(227, 205, 177) 62%, transparent 62%, transparent 100%);
+}
+
+.item-footer > a > .button {
+  background-color: black;
+  padding: 10px 30px 10px;
+  width: 120px;
+  margin-left: 20px;
+
+}
+form > input, .contact > p {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  background-color: black;
+  border-style: none;
+}
+textarea:focus, input:focus {
+    color: white;
+}
+
+.contact{
+  border-style: solid;
+  border-color: black;
+  border-bottom-color: white;
+  border-bottom-width: thin;
+  margin: 10px;
+}
+
+.contact > h3, .contact > form > h3 {
   color: white;
+}
+.item-social > p {
+  font-weight:bolder;
+}
+.item-social > a:link {
+  color: rgb(208, 208, 208);
 }
