@@ -60,7 +60,7 @@ section {
   padding: 0px;
 }
 
-.box-recipies {
+.box-recipes {
   padding-top: 30px;
 }
 
@@ -113,7 +113,7 @@ ul, li {
   padding: 0;
 }
 
-.recipie-item {
+.recipe-item {
   position: relative;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -121,11 +121,11 @@ ul, li {
   padding-bottom: 20px;
 }
 
-.recipie-item>img {
+.recipe-item>img {
   width: 100%;
 }
 
-.recipie-date {
+.recipe-date {
   font-size: 0.8em;
   margin: 0;
   color: rgb(208, 208, 208);
@@ -156,20 +156,20 @@ ul, li {
   max-width: 50px;
 }
 
-.recipie-item:hover {
+.recipe-item:hover {
   /*background: linear-gradient( rgb(247, 241, 235)0%, rgb(247, 241, 235) 64%, white 64%, white 100%);*/
 }
 
-.recipie-item:hover>img {
+.recipe-item:hover>img {
   display: inline;
   opacity: 0.8;
 }
 
-.recipie-item.button {
+.recipe-item.button {
   box-shadow: none;
 }
 
-.recipie-item.line {
+.recipe-item.line {
   display: inline-flex;
   width: 30%;
   height: 1px;
@@ -483,6 +483,6 @@ textarea:focus, input:focus {
     text-indent: 0px;
     text-shadow: none;
     text-align: start;
-    
+
   }
 }
