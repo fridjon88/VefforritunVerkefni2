@@ -113,10 +113,12 @@ ul, li {
 }
 
 .recipie-item {
+  position: relative;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 30%;
   padding-bottom: 20px;
+
 
 }
 
@@ -147,13 +149,20 @@ ul, li {
 
 .play-button {
   display: none;
+  position: absolute;
+  top: 25%;
+  right: 40%;
+  max-height: 50px;
+  max-width: 50px;
+
   }
 .recipie-item:hover {
   /*background: linear-gradient( rgb(247, 241, 235)0%, rgb(247, 241, 235) 64%, white 64%, white 100%);*/
 }
 
 .recipie-item:hover>img {
-  opacity: 0.6;
+  display: inline;
+  opacity: 0.8;
 }
 
 .recipie-item.button {
@@ -362,8 +371,6 @@ textarea:focus, input:focus {
   margin-bottom: 10px;
 }
 .bg-img {
-
-
   background-position: right -210px bottom -20px;
 }
 .box-book, .box-footer {
