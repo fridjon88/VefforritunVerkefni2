@@ -16,6 +16,7 @@ a {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+
 }
 
 h1, h2 {
@@ -56,9 +57,11 @@ h4~a {
 }
 
 section {
-  padding: 50px;
+  padding: 0px;
 }
-
+.box-recipies{
+  padding-top: 30px;
+}
 .box-header {
   display: flex;
   justify-content: space-between;
@@ -86,9 +89,12 @@ section {
 .bg-color {
   background: linear-gradient( rgb(247, 241, 235)0%, rgb(247, 241, 235) 75%, white 75%, white 100%);
 }
+.footer-bg{
+  background-color: black;
+}
 
-.box-featured>section>.text {
-  width: 400px;
+.text-header>.text {
+  width: 50%;
 }
 
 .flex-container {
@@ -161,26 +167,34 @@ ul, li {
 
 .box-book {
   display: flex;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+.book-item{
+  width: 60%;
+
+}
+.book-item.n2 {
+  width: 40%;
+  padding-right: 50px;
+
 }
 
 .book-item>img {
-  padding-right: 50px;
-  height: 450px
+  /*padding-right: 75px;*/
+  height: 100%;
+  width: 100%;
+  /*height: 100%;*/
 }
 
 .box-footer {
   display: flex;
+  flex-wrap: wrap;
   background: black;
   color: white;
   align-items: center;
-  /*crazy background hack https://css-tricks.com/full-browser-width-bars/ */
-  margin: 0 -601.5rem;
-  /* add back section padding (1.5rem) */
-  padding: 0.25rem 1.5rem;
-  /* border has to be solid, not RGBa */
-  /* 9600px or equiv (600rem = 9600/16) */
-  border-left: 600rem solid black;
-  border-right: 600rem solid black;
+  padding-bottom: 20px;
+
 }
 
 .item-footer {
@@ -201,6 +215,7 @@ ul, li {
 
 .button {
   text-align: center;
+
   width: 90px;
   border-style: solid;
   border-width: thin;
@@ -220,12 +235,15 @@ ul, li {
   background: linear-gradient( to right, rgb(227, 205, 177)0%, rgb(227, 205, 177) 47%, transparent 47%, transparent 100%);
 }
 
-.button:hover>span {
+.button:hover>span, .button:hover>li>span {
   color: white;
 }
 
 .button.subscribe:hover {
   background: linear-gradient( to right, rgb(227, 205, 177)0%, rgb(227, 205, 177) 62%, transparent 62%, transparent 100%);
+}
+footer {
+  margin-top: 15px;
 }
 
 .item-footer>a>.button {
@@ -264,4 +282,103 @@ textarea:focus, input:focus {
 
 .item-social>a:link {
   color: rgb(208, 208, 208);
+}
+/*medium stæð*/
+@media only screen and (max-width: 767px) and (min-width: 550px) {
+  .medium-50 {
+    width: 48%;
+  }
+  .medium-50.button{
+    width: 90px;
+    margin: auto;
+  }
+  .medium-100>a>.button{
+    width: 90px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .medium-50.line {
+    display: none;
+  }
+  .medium-100 {
+    width: 100%;
+  }
+  .medium-100.subtext {
+    width: 100%;
+  }
+  .box-book, .box-footer {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .book-item, .item-footer, .item-footer.subtext {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .contact {
+    text-align: left;
+  }
+  .book-item.n2 {
+    padding-left: 25px;
+  }
+  h1 {
+    font-size: 2.7em;
+  }
+  h2 {
+    font-size: 2.0em;
+  }
+  h3 {
+    display: block;
+    text-align: center;
+  }
+
+}
+/*lítil stærð*/
+@media only screen and (max-width: 549px) {
+  .small-100 {
+    width: 100%;
+  }
+  .small-100.button{
+    width: 90px;
+    margin: auto;
+  }
+  .small-100.line {
+    display: none;
+}
+.small-100.button, .small-100>a>.button{
+  width: 90px;
+  margin: auto;
+}
+.small-100>a>.button{
+  margin-bottom: 10px;
+}
+.box-book, .box-footer {
+  flex-wrap: wrap;
+  align-content: center;
+}
+.book-item, .item-footer, .item-footer.subtext {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+.contact {
+  text-align: left;
+}
+.book-item.n2 {
+  padding-left: 25px;
+}
+.item-footer>a>.subscribe {
+  padding: 10px 30px 10px;
+  width: 120px;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  display: block;
+  text-align: center;
 }
