@@ -1,8 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Playfair+Display|Poppins';
 html, body {
   font-family: 'Poppins', sans-serif;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  /*-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;*/
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0 auto;
@@ -249,7 +249,7 @@ ul, li {
   background: linear-gradient( to right, rgb(227, 205, 177)0%, rgb(227, 205, 177) 47%, transparent 47%, transparent 100%);
 }
 
-.button:hover>span, .button:hover>li>span {
+.button:hover>span, .button:hover>a>span {
   color: white;
 }
 
@@ -451,7 +451,6 @@ textarea:focus, input:focus {
     height: 300px;
     flex-direction: column;
     justify-content: space-around;
-    align-content: right;
     list-style: none;
     font-size: 2.5em;
   }
