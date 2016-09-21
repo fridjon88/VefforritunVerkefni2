@@ -224,6 +224,9 @@ ul, li {
   flex-direction: column;
   align-items: center;
 }
+.box-social > .item-social >img {
+  margin: 10px;
+}
 
 .button {
   text-align: center;
@@ -410,6 +413,11 @@ textarea:focus, input:focus {
   }
   .box-featured>.text-header>.text {
     width: 90%;
+  }
+  .book-item.n2 {
+    padding-left: 25px;
+    height: 75%;
+    width: 75%;
   }
   /*hamburger menu, fengið frá https://notendur.hi.is/~osk1/vefforritun/2016/examples/css/13/hamburger.html*/
   .menu>label {
