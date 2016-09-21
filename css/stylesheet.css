@@ -91,7 +91,7 @@ ul>li {
   background: linear-gradient( rgb(247, 241, 235)0%, rgb(247, 241, 235) 75%, white 75%, white 100%);
 }
 .bg-color2 {
-  background: linear-gradient( white 0%, white 23.2%,  #f6f6f6 23.2%, #f6f6f6 100%);
+  background: linear-gradient( white 0%, white 50%,  #f6f6f6 50%, #f6f6f6 100%);
 }
 .bg-color3 {
   background: linear-gradient( white 0%, white 50%, #f6f6f6 50%, #f6f6f6 100%);
@@ -125,6 +125,7 @@ ul, li {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 30%;
   padding-bottom: 20px;
+  background-color: white;
 }
 
 .recipe-item>img {
@@ -173,6 +174,7 @@ ul, li {
 
 .recipe-item.button {
   box-shadow: none;
+  background-color: transparent;
 }
 
 .recipe-item.line {
@@ -187,7 +189,7 @@ ul, li {
 .box-book {
   display: flex;
   padding-top: 30px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 .book-item {
@@ -264,9 +266,6 @@ ul, li {
   background: linear-gradient( to right, rgb(227, 205, 177)0%, rgb(227, 205, 177) 62%, transparent 62%, transparent 100%);
 }
 
-footer {
-  margin-top: 15px;
-}
 
 .item-footer>a>.button {
   background-color: black;
