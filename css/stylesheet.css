@@ -90,6 +90,12 @@ ul>li {
 .bg-color {
   background: linear-gradient( rgb(247, 241, 235)0%, rgb(247, 241, 235) 75%, white 75%, white 100%);
 }
+.bg-color2 {
+  background: linear-gradient( white 0%, white 23.2%,  #f6f6f6 23.2%, #f6f6f6 100%);
+}
+.bg-color3 {
+  background: linear-gradient( white 0%, white 50%, #f6f6f6 50%, #f6f6f6 100%);
+}
 
 .footer-bg {
   background-color: black;
@@ -224,7 +230,8 @@ ul, li {
   flex-direction: column;
   align-items: center;
 }
-.box-social > .item-social >img {
+
+.box-social>.item-social>img {
   margin: 10px;
 }
 
@@ -340,7 +347,6 @@ textarea:focus, input:focus {
     align-items: center;
     text-align: center;
   }
-
   .book-item.n2 {
     padding-left: 25px;
     height: 60%;
@@ -476,7 +482,6 @@ textarea:focus, input:focus {
     display: block;
     /*position: fixed;*/
     position: absolute;
-
     top: 0;
     left: 0;
     width: 100%;
@@ -493,6 +498,5 @@ textarea:focus, input:focus {
     text-indent: 0px;
     text-shadow: none;
     text-align: start;
-
   }
 }
